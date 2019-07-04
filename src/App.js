@@ -8,7 +8,7 @@ import Shop from "./containers/Shop/Shop";
 import SignInAndSignUp from "./containers/SignIn-and-SignUp/SignIn-and-SignUp";
 import Header from "./components/Header/Header";
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
-import { setCurrentUser } from "./store/userReducer/userActions";
+import { setCurrentUser } from "./store/user/userActions";
 class App extends React.Component {
   unsubscribeFromAuth = null;
 
@@ -36,7 +36,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="wrapper">
         <Header />
         <Switch>
           <Route exact path="/" component={Homepage} />
