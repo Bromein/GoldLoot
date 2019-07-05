@@ -15,7 +15,7 @@
     height: 240px;
     display: flex;
     flex-direction: column;
-    overflow: hidden; //!!----- > Change me < ------
+    overflow-y: scroll;
   }
 
   button {
