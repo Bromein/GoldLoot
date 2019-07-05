@@ -32,5 +32,11 @@
 
   .option {
     padding: 10px 15px;
+    transition: 300ms ease all;
+
+    &:hover {
+      color: red;
+      border-bottom: 1px solid rgba(255, 0, 0, 0.267);
+    }
   }
 }
