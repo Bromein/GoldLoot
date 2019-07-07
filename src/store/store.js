@@ -1,4 +1,5 @@
 import { createStore, applyMiddleware } from "redux";
+import { persistStore } from "redux-persist";
 import logger from "redux-logger";
 
 import rootReducer from "./rootReducer";
@@ -6,6 +7,6 @@ import rootReducer from "./rootReducer";
 // ** utilizing an array here for MW so later I can easily spread into applyFn()
 const middlewares = [logger];
 
-const store = createStore(rootReducer, applyMiddleware(...middlewares));
+export const store = createStore(rootReducer, applyMiddleware(...middlewares));
 
-export default store;
+export const persistor = persistStore(store);
