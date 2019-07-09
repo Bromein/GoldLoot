@@ -9,9 +9,9 @@ const StripeButton = ({ price, clearCart }) => {
   const publishableKey = "pk_test_rJCWhmr5KzEvK9sxcd2oXa9800tixcSrXS";
 
   const onToken = token => {
-    clearCart();
-    console.log(token);
+    console.log("im being called!");
     alert("Payment Successful");
+    clearCart();
   };
   return (
     <StripeCheckout

@@ -31,13 +31,11 @@ const cartReducer = (state = INITIAL_STATE, action) => {
     case CartActionTypes.CLEAR_CART_ON_PURCHASE:
       return {
         ...state,
-        cartItems: []
+        ...INITIAL_STATE
       };
 
     default:
-      return {
-        ...state
-      };
+      return state;
   }
 };
 
