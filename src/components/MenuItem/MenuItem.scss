@@ -65,3 +65,15 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .menu-item {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+    .background-image {
+      width: 100%;
+    }
+  }
+}
