@@ -14,6 +14,7 @@ import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 import { setCurrentUser } from "./store/user/userActions";
 import { selectCurrentUser } from "./store/user/userSelectors";
 
+console.log(process.env.REACT_APP_API_KEY);
 class App extends React.Component {
   unsubscribeFromAuth = null;
 

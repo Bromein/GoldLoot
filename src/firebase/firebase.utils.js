@@ -3,7 +3,7 @@ import "firebase/firestore";
 import "firebase/auth";
 
 const config = {
-  apiKey: "AIzaSyCKMxOeZS5OnCc1k3XX7uz81Fv4Eygs238",
+  apiKey: process.env.REACT_APP_API_KEY,
   authDomain: "golddb-7279e.firebaseapp.com",
   databaseURL: "https://golddb-7279e.firebaseio.com",
   projectId: "golddb-7279e",
